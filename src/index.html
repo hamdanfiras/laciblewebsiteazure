@@ -12,42 +12,47 @@
   <meta name="keywords" content="" />
   <meta name="author" content="" />
   <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
-  <!--Replace with your tailwind.css once created-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,400;0,700;1,500;1,700&display=swap"
-    rel="stylesheet">
-  <!-- Define your gradient here - use online tools to find a gradient matching your branding-->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+  
   <style>
+    body {
+      font-family: 'Nunito', sans-serif;
+    }
     .gradient {
-      background: linear-gradient(90deg, #347571 0%, #6accc6 100%);
+      background: #ebebebff;
+    }
+    .logo {
+      height: 100px;
+      margin-right: 10px;
+    }
+    .toptitle {
+      height: 50px;
+    }
+    h1,p, body {
+      color: #32235c;
+    }
+    h2 {
+      color: #940507;
     }
   </style>
 </head>
 
-<body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Roboto Serif', sans-serif;">
+<body class="leading-normal tracking-normal  gradient">
   <!--Nav-->
   <nav id="header" class=" w-full z-30 top-0  text-white ">
     <div class="w-full container mx-auto flex flex-wrap py-6 items-center justify-between mt-0 py-2">
       <div class="pl-4 flex items-center">
-        <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
-          <!--Icon from: http://www.potlabicons.com/ -->
-          <svg class="h-8 fill-current inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.005 512.005">
-            <rect fill="#2a2a31" x="16.539" y="425.626" width="479.767" height="50.502"
-              transform="matrix(1,0,0,1,0,0)" />
-            <path class="plane-take-off"
-              d=" M 510.7 189.151 C 505.271 168.95 484.565 156.956 464.365 162.385 L 330.156 198.367 L 155.924 35.878 L 107.19 49.008 L 211.729 230.183 L 86.232 263.767 L 36.614 224.754 L 0 234.603 L 45.957 314.27 L 65.274 347.727 L 105.802 336.869 L 240.011 300.886 L 349.726 271.469 L 483.935 235.486 C 504.134 230.057 516.129 209.352 510.7 189.151 Z " />
-          </svg>
-          LaCible Advisory
-        </a>
+        
+        <img src="logo.png" alt="Logo" class="logo" />
+        <img src="logo.svg" alt="LaCible Advisory" class="toptitle" />
       </div>
-
     </div>
     <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
   </nav>
   <!--Hero-->
-  <div class="pt-24">
+  <div class="pl-24">
     <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
       <!--Left Col-->
       <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
@@ -55,10 +60,10 @@
           We help you launch financial services products
         </h1>
 
-        <button
-          class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+        <a href="#contactus"
+          class="mx-auto lg:mx-0 hover:underline bg-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
           Contact Us
-        </button>
+      </a>
       </div>
       <!--Right Col-->
       <div class="w-full md:w-3/5 py-6 text-center">
@@ -91,16 +96,16 @@
   </div>
   <section class="bg-white border-b py-8">
     <div class="container max-w-5xl mx-auto m-8">
-      <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
+      <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center">
         About Us
-      </h1>
+      </h2>
       <div class="w-full mb-4">
         <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
       </div>
       <div class="flex flex-wrap">
         <div class="w-5/6 sm:w-1/2 p-6">
 
-          <p class="text-gray-600 mt-8"> 
+          <p class="mt-8">
             We are a boutique consultancy service providers who are hands on and work as part of your team to deliver
             meaningful results. Don’t expect 100 slides presentations from us, we do help you study, analyze, develop
             and implement with practical approaches
@@ -115,9 +120,9 @@
   </section>
   <section class="bg-white border-b py-8">
     <div class="container mx-auto flex flex-wrap pt-4 pb-12">
-      <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
+      <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center">
         Our Services
-      </h1>
+      </h2>
       <div class="w-full mb-4">
         <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
       </div>
@@ -127,10 +132,10 @@
             <div class="justify-center w-full h-64">
               <img class="w-1/4  mx-auto my-4" src="startup.svg" alt="Dollar plant image" />
             </div>
-            <div class="w-full font-bold text-xl text-center	 text-gray-800 px-6">
+            <div class="w-full font-bold text-xl text-center	  px-6">
               Startup Packages
             </div>
-            <p class="text-gray-800 text-base text-center	 px-6 mb-5">
+            <p class="text-base text-center	 px-6 mb-5">
               We build financial models you can pitch to investors
             </p>
           </a>
@@ -142,11 +147,11 @@
             <div class="justify-center w-full h-64">
               <img class="h-1/2 mx-auto mt-8" src="newproducts.svg" alt="wallet image" />
             </div>
-            <div class="w-full font-bold text-xl text-center	 text-gray-800 px-6">
+            <div class="w-full font-bold text-xl text-center px-6">
               New Products
             </div>
-            <p class="text-gray-800 text-base text-center	 px-6 mb-5">
-            
+            <p class=" text-base text-center	 px-6 mb-5">
+
               Product Management, Program management, Vendors Management
             </p>
           </a>
@@ -158,10 +163,10 @@
             <div class="justify-center items-center w-full h-64">
               <img class="w-1/4 mt-6 mx-auto  " src="businessgrowth.svg" alt="Dollar plant image" />
             </div>
-            <div class="w-full font-bold text-xl text-center	 text-gray-800 px-6">
+            <div class="w-full font-bold text-xl text-center px-6">
               Business Growth
             </div>
-            <p class="text-gray-800 text-base text-center	 px-6 mb-5">
+            <p class=" text-base text-center	 px-6 mb-5">
               We build financial models you can pitch to investors
             </p>
           </a>
@@ -172,28 +177,29 @@
 
   <section class="bg-white border-b py-8">
     <div class="container max-w-5xl mx-auto m-8">
-      <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
-Our Team</h1>
+      <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center">
+        Our Team</h2>
       <div class="w-full mb-4">
         <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
       </div>
       <div class="flex flex-wrap">
-      
+
         <div class="w-full sm:w-1/2 p-6">
-        <img src="team.svg" alt="Our team" class="w-1/2 mx-auto" />
+          <img src="team.svg" alt="Our team" class="w-1/2 mx-auto" />
         </div>
         <div class="w-5/6 sm:w-1/2 p-6">
 
           <p class="text-gray-600 mb-8">
-            A team of high caliber, talented and experienced business and Tech consultants. We come from Technology background and specialized in Financial Technologies and business.
+            A team of high caliber, talented and experienced business and Tech consultants. We come from Technology
+            background and specialized in Financial Technologies and business.
           </p>
         </div>
-      
+
       </div>
 
     </div>
   </section>
-  
+
   <!-- Change the colour #f8fafc to match the previous section colour -->
   <svg class="wave-top" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -221,28 +227,27 @@ Our Team</h1>
     </g>
   </svg>
   <section class="container mx-auto text-center py-6 mb-12">
-    <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">
+    <a name="contactus"/>
+    <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center">
       Contact Us
     </h1>
     <div class="w-full mb-4">
-      <div class="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
+      <div class=" mt-8 mx-auto bg-white w-1/6   my-0 p-1 rounded">
+<p class="">Email: <br><strong>luay.obaidi@lacible.de</strong></p>
+<p class="mt-2">Phone: <br><strong>+491751163355</strong></p>
+      </div>
     </div>
-    <h3 class="my-4 text-3xl leading-tight">
-      
-    </h3>
-    <button
-      class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-      Action!
-    </button>
+  
+ 
   </section>
   <!--Footer-->
   <footer class="bg-white">
-   
+
   </footer>
   <!-- jQuery if you need it
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   -->
-  
+
 </body>
 
 </html>
